@@ -74,6 +74,26 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+
+  --color-hero-border: #D5DF51;
+  --color-hero-background: #FFFFFF;
+  --color-hero-text: #000000;
+  --color-hero-text-primary: #FFFFFF;
+
+  --color-carousel-background: rgba(13, 25, 58, 0.94);
+  --color-carousel-border: #515EE0;
+  --color-carousel-border-text: #000000;
+  --color-carousel-text-primary: #FFFFFF;
+  --color-carousel-text-minimum: #C5C4C4;
+
+  --color-about-us-text: #FFFFFF;
+  --color-about-us-background: #1D2B4A;
+  --color-about-us-border: #000000;
+  --color-about-us-background-button: #D9D9D9;
+
+  --color-section-text: #FFFFFF;
+  --color-section-background: #1D2B4A;
+  --color-section-background-button: rgba(217, 217, 217, 0.64);
 }
 
 .dark {
