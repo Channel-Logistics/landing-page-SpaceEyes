@@ -75,29 +75,25 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
-  /*Hero*/
   --color-hero-border: #D5DF51;
   --color-hero-background: #FFFFFF;
   --color-hero-text: #000000;
   --color-hero-text-primary: #FFFFFF;
 
-  /*Carrusel*/
-  --color-carrusel-background: rgba(13, 25, 58, 0.94);
-  --color-carrusel-border: #515EE0;
-  --color-carrusel-border-text: #000000;
-  --color-carrusel-text-prymary: #FFFFFF;
-  --color-carrusel-text-minimum: #C5C4C4;
+  --color-carousel-background: rgba(13, 25, 58, 0.94);
+  --color-carousel-border: #515EE0;
+  --color-carousel-border-text: #000000;
+  --color-carousel-text-primary: #FFFFFF;
+  --color-carousel-text-minimum: #C5C4C4;
 
-  /*About Us*/
   --color-about-us-text: #FFFFFF;
   --color-about-us-background: #1D2B4A;
   --color-about-us-border: #000000;
   --color-about-us-background-button: #D9D9D9;
 
-  /*Seccion oscuro*/
-  --color-seccion-text: #FFFFFF;
-  --color-seccion-background: #1D2B4A;
-  --color-seccion-background-button: rgba(217, 217, 217, 0.64);
+  --color-section-text: #FFFFFF;
+  --color-section-background: #1D2B4A;
+  --color-section-background-button: rgba(217, 217, 217, 0.64);
 }
 
 .dark {
