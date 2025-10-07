@@ -87,13 +87,18 @@
   --color-carousel-text-minimum: #C5C4C4;
 
   --color-about-us-text: #FFFFFF;
-  --color-about-us-background: #1D2B4A;
   --color-about-us-border: #000000;
   --color-about-us-background-button: #D9D9D9;
 
   --color-section-text: #FFFFFF;
-  --color-section-background: #1D2B4A;
+  --color-section-background: #010812;
   --color-section-background-button: rgba(217, 217, 217, 0.64);
+  --color-section-border: #1574C2;
+  --color-text-button: #373737;
+
+  --color-footer-background: #000000;
+  --color-footer-text-primary: #FFFFFF;
+  --color-footer-text: #BBBBBB;
 }
 
 .dark {
