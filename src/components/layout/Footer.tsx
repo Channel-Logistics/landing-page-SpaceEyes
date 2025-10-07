@@ -1,7 +1,7 @@
 // src/components/layout/Footer.tsx
 import { Mail, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-
+const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
 export default function Footer() {
     return (
         <footer className="bg-gray-950 text-gray-300 mt-12 border-t border-gray-800">
@@ -9,8 +9,11 @@ export default function Footer() {
 
                 <div className="col-span-1 md:col-span-2">
                     <div className="flex items-center mb-4">
-                        <div className="w-20 h-20 rounded bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                            <img alt="Space Eyes Logo" className="w-16 h-auto object-contain" />
+                        <div className="w-20 h-20 rounded bg-gradient-to-br flex items-center justify-center">
+                            <img
+                                src={SpaceEyesLogoPath}
+                                alt="SpaceEyes Logo"
+                                className="w-16 h-auto object-contain" />
                         </div>
                     </div>
 
