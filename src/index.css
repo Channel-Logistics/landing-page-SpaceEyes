@@ -41,6 +41,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   
   --color-footer-hr: #FFFFFF;
+  --Color-footer-text: #BBBBBB;
   --color-hero-border: #D5DF51;
   --color-hero-background: #FFFFFF;
   --color-hero-text: #000000;
@@ -55,8 +56,10 @@
   --color-about-us-border: #333333;
   --color-about-us-background-button: #D9D9D9;
   --color-section-text: #FFFFFF;
-  --color-section-background: #000000;
+  --color-section-background: #010812;
   --color-section-background-button: rgba(217, 217, 217, 0.64);
+  --color-section-border: #1574C2;
+  --color-text-button: #373737;
   
   --color-app-background: #000000;
   --color-app-text: #FFFFFF;
