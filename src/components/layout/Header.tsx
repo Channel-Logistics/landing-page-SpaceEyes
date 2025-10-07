@@ -26,19 +26,19 @@ export default function Header() {
                   href="#" 
                   className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
                 >
-                  PRODUCTS
+                  DEFENSE
+                </a>
+                <a 
+                  href="#" 
+                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
+                >
+                  CLIMATE
                 </a>
                 <a 
                   href="#" 
                   className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
                 >
                   COMPANY
-                </a>
-                <a 
-                  href="#" 
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
-                >
-                  INVEST IN US
                 </a>
                 <a 
                   href="#" 
