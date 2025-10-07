@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
+    <div className="flex flex-col min-h-screen bg-app-background text-app-text">
       <Header />
       <main className="flex-grow pt-24">
         <Routes>
