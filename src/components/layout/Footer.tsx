@@ -6,7 +6,7 @@ const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
 export default function Footer() {
     return (
         <footer className="bg-carousel-background text-carousel-text-minimum mt-12 rounded-t-lg">
-            <hr className="h-[0.5px] border-0 bg-footer-hr mx-auto max-w-7xl" style={{ borderWidth: 0 }} />
+            <hr className="h-px border-0 bg-footer-hr mx-auto max-w-7xl" />
 
             <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -124,7 +124,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <hr className="h-[0.5px] border-0 bg-footer-hr mx-auto max-w-7xl" style={{ borderWidth: 0 }} />
+            <hr className="h-px border-0 bg-footer-hr mx-auto max-w-7xl"/>
 
             <div className="py-4 text-center text-xs text-carousel-text-minimum opacity-80">
                 © Space-Eyes™ Inc | STATE OF FLORIDA © {new Date().getFullYear()} | All Rights Reserved.
