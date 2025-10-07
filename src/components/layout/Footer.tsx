@@ -8,7 +8,6 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                     
-                    {/* Logo and Description Section */}
                     <div className="md:col-span-4">
                         <div className="flex items-center mb-4">
                             <div className="w-24 h-24 rounded bg-gradient-to-br flex items-center justify-center">
@@ -44,10 +43,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Right side sections with dividers */}
                     <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-3 divide-x divide-gray-700">
-                        
-                        {/* Products Section */}
                         <div className="px-6">
                             <h3 className="text-sm font-semibold text-white mb-4 tracking-wider">PRODUCTS</h3>
                             <ul className="space-y-3">
@@ -68,8 +64,6 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* Useful Links Section */}
                         <div className="px-6">
                             <h3 className="text-sm font-semibold text-white mb-4 tracking-wider">USEFUL LINKS</h3>
                             <ul className="space-y-3">
@@ -95,8 +89,6 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* Contact Section */}
                         <div className="px-6">
                             <h3 className="text-sm font-semibold text-white mb-4 tracking-wider">CONTACT US</h3>
                             
@@ -131,8 +123,6 @@ export default function Footer() {
 
                 </div>
             </div>
-
-            {/* Copyright Section */}
             <div className="border-t border-gray-700 py-4 text-center text-xs text-gray-500">
                 © Space-Eyes™ Inc | STATE OF FLORIDA © {new Date().getFullYear()} | All Rights Reserved.
             </div>
