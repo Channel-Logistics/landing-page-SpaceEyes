@@ -4,6 +4,7 @@ import HeroSection from './components/pages/hero';
 import Firewatch from "./components/pages/Firewatch";
 import SeaWatch from "./components/pages/Seawatch";
 import Morpheus from "./components/pages/Morpheus";
+import ContactUs from "./components/pages/usefulLinks/ContactUs";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Firewatch />
         <SeaWatch />
         <Morpheus />
+        <ContactUs />
 
       </main>
 
