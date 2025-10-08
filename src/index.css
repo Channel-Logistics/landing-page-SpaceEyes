@@ -60,6 +60,12 @@
   --color-section-background-button: rgba(217, 217, 217, 0.64);
   --color-section-border: #1574C2;
   --color-text-button: #373737;
+
+  --color-contact-us-border: #FFFFFF; 
+  --color-contact-us-text: #FFFFFF;
+  --color-contact-us-background: rgba(37, 37, 44, 0.92);
+  --color-contact-us-fields-background: rgba(255, 255, 255, 0.1);
+  --color-contact-us-fields-border: rgba(255, 255, 255, 0.3);
   
   --color-app-background: #000000;
   --color-app-text: #FFFFFF;
