@@ -1,6 +1,8 @@
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HeroSection from './components/pages/hero';
+import Firewatch from "./components/pages/Firewatch";
+import SeaWatch from "./components/pages/Seawatch";
 
 function App() {
   return (
@@ -8,6 +10,9 @@ function App() {
       <Header />
       <main className="flex-grow pt-24">
       <HeroSection />
+      <Firewatch/>
+      <SeaWatch/>
+      
       </main>
 
       <Footer />
