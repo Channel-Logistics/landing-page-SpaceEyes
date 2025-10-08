@@ -1,4 +1,3 @@
-import { Button } from "../../components/ui/button";
 import { Menu } from "lucide-react";
 
 const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
@@ -76,16 +75,6 @@ export default function Header() {
             >
               CONTACT US
             </Button>*/}
-          </div>
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="bg-slate-900/40 backdrop-blur-sm border border-slate-700/60 
-                         text-white hover:bg-slate-800/60"
-            >
-              <Menu className="h-5 w-5" />
-            </Button>
           </div>
         </div>
       </div>
