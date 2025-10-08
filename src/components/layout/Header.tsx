@@ -40,7 +40,7 @@ export default function Header() {
                   COMPANY
                 </a>
                 <a
-                  href="#"
+                  href="investor"
                   className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
                 >
                   INVENTORS
