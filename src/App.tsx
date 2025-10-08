@@ -1,5 +1,3 @@
-// src/App.tsx
-import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HeroSection from './components/pages/hero';
@@ -10,7 +8,6 @@ function App() {
       <Header />
       <main className="flex-grow pt-24">
       <HeroSection />
-      
       </main>
 
       <Footer />
