@@ -20,8 +20,8 @@ export default function ContactUs() {
             <h2 className="text-3xl font-semibold mb-12 text-contact-us-text">SEND US MESSAGE</h2>
             <form className="space-y-6 flex-1 flex flex-col justify-between">
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col">
+              <div className="flex flex-wrap gap-4">
+                <div className="flex flex-col w-full md:w-[calc(50%-0.5rem)]">
                   <label className="text-contact-us-text text-md mb-1">Your Name</label>
                   <input
                     type="text"
@@ -29,7 +29,7 @@ export default function ContactUs() {
                   />
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full md:w-[calc(50%-0.5rem)]">
                   <label className="text-contact-us-text text-md mb-1">Country</label>
                   <select
                     className="backdrop-blur-md bg-contact-us-fields-background border-2 border-contact-us-fields-border rounded-2xl p-3 text-sm text-contact-us-text focus:outline-none focus:border-contact-us-border"
@@ -39,8 +39,8 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col">
+              <div className="flex flex-wrap gap-4">
+                <div className="flex flex-col w-full md:w-[calc(50%-0.5rem)]">
                   <label className="text-contact-us-text text-md mb-1">Company</label>
                   <input
                     type="text"
@@ -48,7 +48,7 @@ export default function ContactUs() {
                   />
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col  w-full md:w-[calc(50%-0.5rem)]">
                   <label className="text-contact-us-text text-md mb-1">Your Email</label>
                   <input
                     type="email"
