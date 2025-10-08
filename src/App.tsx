@@ -1,8 +1,8 @@
-// src/App.tsx
-import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HeroSection from './components/pages/hero';
+import Firewatch from "./components/pages/Firewatch";
+import SeaWatch from "./components/pages/Seawatch";
 
 import ContentRenderer from "./components/pages/ContentRenderer";
 
@@ -17,6 +17,8 @@ function App() {
           
         </Routes>
       <HeroSection />
+      <Firewatch/>
+      <SeaWatch/>
       
       </main>
 
