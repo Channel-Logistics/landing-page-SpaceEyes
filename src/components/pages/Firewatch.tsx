@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Background = "/images/background/bg-7.webp";
+const Background = "/images/background/bg-5.webp";
 
 const Firewatch: React.FC = () => {
      return (
@@ -8,7 +8,7 @@ const Firewatch: React.FC = () => {
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                         //backgroundImage: `url(${Background})`,
+                         backgroundImage: `url(${Background})`,
                     }}
                >
                     <div className="absolute inset-0 bg-black/40"></div>

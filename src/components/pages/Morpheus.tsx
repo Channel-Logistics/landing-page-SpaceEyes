@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Background = "/images/background/subheader-1.webp";
+const Background = "/images/background/bg-7.webp";
 
-const SeaWatch: React.FC = () => {
+const Morpheus: React.FC = () => {
      return (
           <section className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                         backgroundImage: `url(${Background})`,
+                         //backgroundImage: `url(${Background})`,
                     }}
                >
                     <div className="absolute inset-0 bg-black/40"></div>
@@ -16,11 +16,11 @@ const SeaWatch: React.FC = () => {
                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                              SeaWatch
+                              Morpheus
                          </h1>
                          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
-                              SeaWatch™ offers insights into<br className="block" />
-                              maritime activity, supporting trade, security, and sustainability
+                              Morpheus™ blends carbon monitoring and predictive <br className="block" />
+                              analytics for carbon markets and commodity stakeholders
                          </p>
                          <button
                               className="group relative inline-flex items-center justify-center px-8 py-3 
@@ -45,4 +45,4 @@ const SeaWatch: React.FC = () => {
      );
 };
 
-export default SeaWatch;
+export default Morpheus;
