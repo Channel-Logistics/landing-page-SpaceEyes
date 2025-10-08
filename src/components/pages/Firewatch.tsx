@@ -1,10 +1,11 @@
 import React from 'react';
+import ScrollSnapSection from '../ui/ScrollSnapSection';
 
 const Background = "/images/background/bg-5.webp";
 
 const Firewatch: React.FC = () => {
      return (
-          <section className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">
+          <ScrollSnapSection>
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
@@ -41,7 +42,7 @@ const Firewatch: React.FC = () => {
                          </button>
                     </div>
                </div>
-          </section>
+          </ScrollSnapSection>
      );
 };
 
