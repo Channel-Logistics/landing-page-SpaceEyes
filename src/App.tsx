@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
+import ContentRenderer from "./components/pages/ContentRenderer";
+
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-app-background text-app-text">
@@ -10,6 +12,8 @@ function App() {
       <main className="flex-grow pt-24">
         <Routes>
           <Route path="*" element={<h1 className="text-center mt-20 text-lg">404 - Page Not Found</h1>} />
+          <Route path="/contact-us" element={<ContentRenderer />} />
+          
         </Routes>
       </main>
 
