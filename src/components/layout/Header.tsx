@@ -49,12 +49,22 @@ export default function Header() {
               </div>
             </nav>
 
-            <a
-              href="/contact-us"
-              className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
-            >
-              contact us
-            </a>
+            <nav className="flex items-center 
+                            bg-slate-900/40 backdrop-blur-sm 
+                            border border-slate-700/60 
+                            rounded-full px-6 lg:px-8 py-2">
+              <div className="flex items-center space-x-4 lg:space-x-8 text-white text-sm font-medium">
+
+
+
+                <a
+                  href="/contact-us"
+                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
+                >
+                  contact us
+                </a>
+              </div>
+            </nav>
 
             {/*<Button
               className="bg-slate-900/40 backdrop-blur-sm border border-slate-700/60 
