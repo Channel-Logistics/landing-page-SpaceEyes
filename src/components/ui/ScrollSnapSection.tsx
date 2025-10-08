@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ScrollSnapSection = ({ children, delay = 0 }) => {
+interface ScrollSnapSectionProps {
+  children: React.ReactNode;
+  delay?: number;
+}
+
+const ScrollSnapSection: React.FC<ScrollSnapSectionProps> = ({ children, delay = 0 }) => {
   return (
     <motion.section
       className="snap-start relative min-h-screen w-full flex items-center justify-start overflow-hidden"
