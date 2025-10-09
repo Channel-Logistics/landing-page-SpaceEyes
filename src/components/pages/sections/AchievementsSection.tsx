@@ -1,11 +1,8 @@
 import React from "react";
-
 import AchievementCard from "../../ui/AchievementCard";
 import SeaWatch from "../../../../public/images/sea-watch.webp";
 import type { Achievement } from "../../types/Archivements";
 import { achievements } from "../../constants/AchivementsSection";
-
-
 
 const AchievementsSection: React.FC = () => {
     return (
@@ -17,14 +14,18 @@ const AchievementsSection: React.FC = () => {
                     </h2>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-wrap justify-center gap-8">
                     {achievements.map((item: Achievement) => (
-                        <AchievementCard
+                        <div
                             key={item.description}
-                            title={item.title}
-                            description={item.description}
-                            image={item.image}
-                        />
+                            className="w-full md:w-[48%] lg:w-[30%] flex justify-center"
+                        >
+                            <AchievementCard
+                                title={item.title}
+                                description={item.description}
+                                image={item.image}
+                            />
+                        </div>
                     ))}
                 </div>
             </section>
@@ -41,33 +42,39 @@ const AchievementsSection: React.FC = () => {
                 <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
                     <h2 className="text-4xl font-bold tracking-tight">Space Eyes</h2>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam rem ratione aliquid numquam alias, architecto et voluptas, illo ex tempora dolores! Adipisci nulla doloremque modi maxime quisquam? Architecto, doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam
+                        rem ratione aliquid numquam alias, architecto et voluptas, illo ex
+                        tempora dolores! Adipisci nulla doloremque modi maxime quisquam?
+                        Architecto, doloremque.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis pariatur nam sunt assumenda possimus, distinctio quo corporis ea repellendus voluptates similique veniam, amet at excepturi quis, consequuntur nulla! Laboriosam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                        facilis pariatur nam sunt assumenda possimus, distinctio quo corporis
+                        ea repellendus voluptates similique veniam, amet at excepturi quis,
+                        consequuntur nulla! Laboriosam!
                     </p>
                 </div>
             </section>
 
-
-
             <section className="py-20 px-6 lg:px-12 bg-black text-white">
-
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-wrap justify-center gap-8">
                     {achievements.map((item) => (
-                        <AchievementCard
+                        <div
                             key={item.description}
-                            title={item.title}
-                            description={item.description}
-                            image={item.image}
-                        />
+                            className="w-full md:w-[48%] lg:w-[30%] flex justify-center"
+                        >
+                            <AchievementCard
+                                title={item.title}
+                                description={item.description}
+                                image={item.image}
+                            />
+                        </div>
                     ))}
                 </div>
             </section>
 
             <section className="py-20 bg-black text-white">
                 <div className="container mx-auto px-6 lg:px-12 flex flex-col gap-12">
-
                     <div className="flex flex-col items-start gap-4">
                         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white/90">
                             News Releases
@@ -126,23 +133,20 @@ const AchievementsSection: React.FC = () => {
                             </svg>
                         </a>
                     </div>
-
                 </div>
             </section>
 
             <section className="py-20 bg-black text-white">
                 <div className="container mx-auto px-6 lg:px-12">
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-
-                        <div className="flex flex-col items-start">
+                    <div className="flex flex-col md:flex-row md:items-start gap-12">
+                        <div className="flex flex-col items-start md:w-1/2">
                             <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white/90">
                                 Past Events
                             </h2>
                             <div className="w-20 h-1 bg-white/20 rounded-full mt-4"></div>
                         </div>
 
-                        <div className="flex flex-col gap-8">
+                        <div className="flex flex-col gap-8 md:w-1/2">
                             <div>
                                 <h3 className="text-lg font-semibold text-white mb-1">
                                     Firefly Aerospace Announces Acquisition of SciTec
@@ -188,7 +192,6 @@ const AchievementsSection: React.FC = () => {
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     <div className="flex justify-center mt-4">
@@ -211,11 +214,6 @@ const AchievementsSection: React.FC = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
         </>
     );
 };
