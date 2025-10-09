@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./components/pages/sections/Home";
 import Investor from "./components/pages/sections/Investor";
-import ContactUs from "./components/pages/usefulLinks/ContactUs";
 
 export default function App() {
   return (
@@ -10,7 +9,6 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/investor" element={<Investor />} />
-        <Route path="/contact-us" element={<ContactUs />} />
       </Route>
     </Routes>
   );
