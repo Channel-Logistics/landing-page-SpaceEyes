@@ -1,6 +1,5 @@
 import React from "react";
 import AchievementCard from "../../ui/AchievementCard";
-import SeaWatch from "../../../../public/images/sea-watch.webp";
 import type { Achievement } from "../../types/Archivements";
 import { achievements } from "../../constants/AchivementsSection";
 
@@ -31,10 +30,10 @@ const AchievementsSection: React.FC = () => {
             </section>
 
             <section className="bg-black text-white py-20 px-6 lg:px-12 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
-                <figure className="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg border border-blue-400">
+                <figure className="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg border border-white">
                     <img
-                        src={SeaWatch}
-                        alt="Sea Watch"
+
+                        alt="image"
                         className="w-full h-full object-cover"
                     />
                 </figure>
@@ -42,16 +41,8 @@ const AchievementsSection: React.FC = () => {
                 <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
                     <h2 className="text-4xl font-bold tracking-tight">Space Eyes</h2>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam
-                        rem ratione aliquid numquam alias, architecto et voluptas, illo ex
-                        tempora dolores! Adipisci nulla doloremque modi maxime quisquam?
-                        Architecto, doloremque.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-                        facilis pariatur nam sunt assumenda possimus, distinctio quo corporis
-                        ea repellendus voluptates similique veniam, amet at excepturi quis,
-                        consequuntur nulla! Laboriosam!
                     </p>
                 </div>
             </section>
@@ -106,7 +97,7 @@ const AchievementsSection: React.FC = () => {
 
                                     <a
                                         href="#"
-                                        className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                                        className="text-sm font-medium text-muted hover:text-blue-300 transition-colors"
                                     >
                                         Read More →
                                     </a>
@@ -149,14 +140,12 @@ const AchievementsSection: React.FC = () => {
                         <div className="flex flex-col gap-8 md:w-1/2">
                             <div>
                                 <h3 className="text-lg font-semibold text-white mb-1">
-                                    Firefly Aerospace Announces Acquisition of SciTec
                                 </h3>
                                 <p className="text-sm text-gray-400">
-                                    October 5, 2025 | 4:00 PM CDT
                                 </p>
                                 <a
                                     href="#"
-                                    className="inline-flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                                    className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-blue-300 transition-colors"
                                 >
                                     Read More →
                                 </a>
@@ -164,14 +153,12 @@ const AchievementsSection: React.FC = () => {
 
                             <div>
                                 <h3 className="text-lg font-semibold text-white mb-1">
-                                    Firefly Aerospace Second Quarter 2025 Financial Results Conference Call
+
                                 </h3>
-                                <p className="text-sm text-gray-400">
-                                    September 22, 2025 | 5:00 PM EDT
-                                </p>
+                                <p className="text-sm text-gray-400"></p>
                                 <a
                                     href="#"
-                                    className="inline-flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                                    className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-blue-300 transition-colors"
                                 >
                                     Read More →
                                 </a>
@@ -179,14 +166,12 @@ const AchievementsSection: React.FC = () => {
 
                             <div>
                                 <h3 className="text-lg font-semibold text-white mb-1">
-                                    Jefferies Industrials Conference
                                 </h3>
                                 <p className="text-sm text-gray-400">
-                                    September 3, 2025 | 8:50 AM EDT
                                 </p>
                                 <a
                                     href="#"
-                                    className="inline-flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                                    className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-blue-300 transition-colors"
                                 >
                                     Read More →
                                 </a>
@@ -194,7 +179,7 @@ const AchievementsSection: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center mt-4">
+                    <div className="flex justify-center mt-20">
                         <a
                             href="#"
                             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-black bg-white rounded-full hover:bg-white/90 transition-all duration-300 shadow-md hover:shadow-lg"
