@@ -1,17 +1,9 @@
 import React from 'react';
-import { type LucideIcon } from 'lucide-react';
+import type { PrincipleBlockProps } from '../constants/principlData';
 
-interface FeatureBlockProps {
-    icon: LucideIcon;
-    title: string;
-    subtitle: string;
-    description: string;
-    reverse?: boolean;
-    imageClass: string;
-}
-
-const FeatureBlock: React.FC<FeatureBlockProps> = ({ icon: Icon, title, subtitle, description, reverse, imageClass }) => (
+const FeatureBlock: React.FC<PrincipleBlockProps> = ({ icon: Icon, title, subtitle, description, reverse, imageClass }) => (
     <div className={`flex flex-col md:flex-row items-center gap-12 pt-16 ${reverse ? 'md:flex-row-reverse' : ''}`}>
+
         <div className="md:w-1/2">
             <div className="flex items-center space-x-3 mb-4">
                 <Icon className="h-8 w-8 text-white shrink-0" />
@@ -20,7 +12,6 @@ const FeatureBlock: React.FC<FeatureBlockProps> = ({ icon: Icon, title, subtitle
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug tracking-tight">
                 {title}
             </h3>
-
             <p className="text-lg text-white/80 leading-relaxed max-w-xl">
                 {description}
             </p>
