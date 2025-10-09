@@ -1,15 +1,18 @@
-import HeroSection from "../hero";
 import Firewatch from "../Firewatch";
 import SeaWatch from "../Seawatch";
 import Morpheus from "../Morpheus";
+import SpaceSection from "../Spacesection";
+import CorePillarsSection from "../CorePillarsSection";
+
 
 export default function Home() {
-    return (
-        <>
-            <HeroSection />
-            <Firewatch />
-            <SeaWatch />
-            <Morpheus />
-        </>
-    );
+    return (
+        <>
+            <SpaceSection />
+            <CorePillarsSection /> {/* <-- NEW SECTION */}
+            <Firewatch />
+            <SeaWatch />
+            <Morpheus />
+        </>
+    );
 }
