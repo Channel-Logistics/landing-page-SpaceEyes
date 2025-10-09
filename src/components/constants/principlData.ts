@@ -1,15 +1,15 @@
-import { Zap, Target, Globe, Leaf, Clock, type LucideIcon } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { Zap, Target, Globe, Leaf, Clock } from 'lucide-react';
 
-interface Principle {
+export interface PrincipleBlockProps {
      icon: LucideIcon;
      title: string;
      subtitle: string;
      description: string;
+     reverse?: boolean;
      imageClass: string;
-     reverse: boolean;
 }
-
-export const Principles: Principle[] = [
+export const Principles: PrincipleBlockProps[] = [
      {
           icon: Zap,
           title: "Expertise Integration",

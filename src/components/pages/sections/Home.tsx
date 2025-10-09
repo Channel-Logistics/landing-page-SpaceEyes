@@ -6,13 +6,13 @@ import CorePillarsSection from "../CorePillarsSection";
 
 
 export default function Home() {
-    return (
-        <>
-            <SpaceSection />
-            <CorePillarsSection /> {/* <-- NEW SECTION */}
-            <Firewatch />
-            <SeaWatch />
-            <Morpheus />
-        </>
-    );
+    return (
+        <>
+            <SpaceSection />
+            <CorePillarsSection />
+            <Firewatch />
+            <SeaWatch />
+            <Morpheus />
+        </>
+    );
 }
