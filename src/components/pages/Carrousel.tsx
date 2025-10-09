@@ -53,7 +53,7 @@ const WorkflowSection: React.FC = () => {
     const spacingValue = '4';
     return (
         <ScrollSnapSection>
-            <div className="absolute inset-0 bg-[var(--color-section-background)]"></div>
+            <div className="absolute inset-0 bg-section-background"></div>
             <div className="relative z-10 w-full h-full max-w-7xl mx-auto py-24 md:py-32 flex items-center">
 
                 <div className="w-full">
