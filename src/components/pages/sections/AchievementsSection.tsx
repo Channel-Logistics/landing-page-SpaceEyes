@@ -1,24 +1,11 @@
 import React from "react";
+
 import AchievementCard from "../../ui/AchievementCard";
 import SeaWatch from "../../../../public/images/sea-watch.webp";
+import type { Achievement } from "../../types/Archivements";
+import { achievements } from "../../constants/AchivementsSection";
 
-const achievements = [
-    {
-        title: "First & Only",
-        description: "Operational U.S. 1-ton Rocket",
-        image: "/images/rocket-engine.jpg",
-    },
-    {
-        title: "First & Only",
-        description: "24 Hour Record-Breaking Responsive Launch Time",
-        image: "/images/rocket-launch.jpg",
-    },
-    {
-        title: "First & Only",
-        description: "Fully Successful Commercial Moon Landing",
-        image: "/images/moon-landing.jpg",
-    },
-];
+
 
 const AchievementsSection: React.FC = () => {
     return (
@@ -31,7 +18,7 @@ const AchievementsSection: React.FC = () => {
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {achievements.map((item) => (
+                    {achievements.map((item: Achievement) => (
                         <AchievementCard
                             key={item.description}
                             title={item.title}
