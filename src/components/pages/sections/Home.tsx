@@ -1,18 +1,14 @@
-import Firewatch from "@/components/pages/climates/Firewatch";
-import SeaWatch from "@/components/pages/defenses/Seawatch";
-import Morpheus from "@/components/pages/defenses/Morpheus";
 import SpaceSection from "../Spacesection";
 import CorePillarsSection from "../CorePillarsSection";
+import WorkflowSection from "../Carrousel";
 
 
 export default function Home() {
     return (
         <>
             <SpaceSection />
+            <WorkflowSection />
             <CorePillarsSection />
-            <Firewatch />
-            <SeaWatch />
-            <Morpheus />
         </>
     );
 }
