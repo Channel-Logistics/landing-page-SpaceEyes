@@ -4,13 +4,17 @@ import { Outlet, useLocation } from "react-router-dom";
 
 export default function Layout() {
     const location = useLocation();
-    const isInvestorRoute = location.pathname === "/investor";
-    const containerClasses = isInvestorRoute
-        ? "h-screen overflow-y-scroll scroll-smooth bg-app-background text-app-text"
-        : "h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-app-background text-app-text";
-    const mainClasses = isInvestorRoute
-        ? "flex-grow"
-        : "flex-grow pt-24"; 
+    const isRootRoute = location.pathname === "/";
+    const scrollSnapClasses = isRootRoute 
+        ? "snap-y snap-mandatory"
+        : ""; 
+    const containerClasses = `
+        h-screen overflow-y-scroll scroll-smooth bg-app-background text-app-text
+        ${scrollSnapClasses}
+    `.trim();
+    const mainClasses = isRootRoute
+        ? "flex-grow pt-24"
+        : "flex-grow"; 
 
     return (
         <div className={containerClasses}>
