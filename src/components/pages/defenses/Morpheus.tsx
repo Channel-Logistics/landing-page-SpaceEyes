@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollSnapSection from '../../ui/ScrollSnapSection';
-import Button from '../../ui/button';
+import ButtonLanding from '@/components/ui/buttonlanding';
+
 
 const Background = "/images/background/Morpheus.png";
 
@@ -24,7 +25,7 @@ const Morpheus: React.FC = () => {
                               Morpheus™ blends carbon monitoring and predictive <br className="block" />
                               analytics for carbon markets and commodity stakeholders
                          </p>
-                         <Button />
+                         <ButtonLanding />
                     </div>
                </div>
           </ScrollSnapSection>

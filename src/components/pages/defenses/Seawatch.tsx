@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollSnapSection from '../../ui/ScrollSnapSection';
-import Button from '../../ui/button';
+import ButtonLanding from '@/components/ui/buttonlanding';
 
 const Background = "/images/background/subheader-1.webp";
 
@@ -24,7 +24,7 @@ const SeaWatch: React.FC = () => {
                               SeaWatch™ offers insights into<br className="block" />
                               maritime activity, supporting trade, security, and sustainability
                          </p>
-                         <Button />
+                         <ButtonLanding />
                     </div>
                </div>
           </ScrollSnapSection>

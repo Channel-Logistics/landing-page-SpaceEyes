@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollSnapSection from '../../ui/ScrollSnapSection';
-import Button from '../../ui/button';
+import ButtonLanding from '@/components/ui/buttonlanding';
 
 const Background = "/images/background/bg-5.webp";
 
@@ -24,7 +24,7 @@ const Firewatch: React.FC = () => {
                               FireWatch™ addresses the growing<br className="block" />
                               wildfire crisis with predictive and real-time tools
                          </p>
-                         <Button />
+                         <ButtonLanding />
                     </div>
                </div>
           </ScrollSnapSection>
