@@ -1,10 +1,10 @@
 import React from 'react';
-import ScrollSnapSection from '../ui/ScrollSnapSection';
-import Button from '../ui/button';
+import ScrollSnapSection from '../../ui/ScrollSnapSection';
+import Button from '../../ui/button';
 
-const Background = "/images/background/subheader-1.webp";
+const Background = "/images/background/Morpheus.png";
 
-const SeaWatch: React.FC = () => {
+const Morpheus: React.FC = () => {
      return (
           <ScrollSnapSection>
                <div
@@ -18,11 +18,11 @@ const SeaWatch: React.FC = () => {
                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-                              SeaWatch
+                              Morpheus
                          </h1>
                          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
-                              SeaWatch™ offers insights into<br className="block" />
-                              maritime activity, supporting trade, security, and sustainability
+                              Morpheus™ blends carbon monitoring and predictive <br className="block" />
+                              analytics for carbon markets and commodity stakeholders
                          </p>
                          <Button />
                     </div>
@@ -31,4 +31,4 @@ const SeaWatch: React.FC = () => {
      );
 };
 
-export default SeaWatch;
+export default Morpheus;
