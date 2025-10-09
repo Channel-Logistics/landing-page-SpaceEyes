@@ -41,7 +41,7 @@ export default function Header() {
                   >
                     <DropdownMenuItem asChild>
                       <Link
-                        to="/sea-watch"
+                        to="/defense/sea-watch"
                         className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
                       >
                         SeaWatch
@@ -49,7 +49,7 @@ export default function Header() {
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link
-                        to="/morpheus"
+                        to="/defense/morpheus"
                         className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
                       >
                         Morpheus
@@ -71,7 +71,7 @@ export default function Header() {
                   >
                     <DropdownMenuItem asChild>
                       <Link
-                        to="/fire-watch"
+                        to="/climate/fire-watch"
                         className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
                       >
                         FireWatch
