@@ -1,6 +1,6 @@
 import React from 'react';
-import ScrollSnapSection from '../ui/ScrollSnapSection';
-import Button from '../ui/button';
+import ScrollSnapSection from '../../ui/ScrollSnapSection';
+import Button from '../../ui/button';
 
 const Background = "/images/background/bg-5.webp";
 

@@ -1,4 +1,11 @@
-import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
 
@@ -8,73 +15,95 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between py-6">
           <div className="flex items-center">
-            <img
-              src={SpaceEyesLogoPath}
-              alt="SpaceEyes Logo"
-              className="h-8 md:h-10 filter brightness-150 contrast-100"
-            />
+            <Link to="/" className="flex items-center">
+              <img
+                src={SpaceEyesLogoPath}
+                alt="SpaceEyes Logo"
+                className="h-8 md:h-10 filter brightness-125 contrast-100 cursor-pointer"
+              />
+            </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            <nav className="flex items-center 
-                            bg-slate-900/40 backdrop-blur-sm 
-                            border border-slate-700/60 
-                            rounded-full px-6 lg:px-8 py-2">
-              <div className="flex items-center space-x-4 lg:space-x-8 text-white text-sm font-medium">
-                <a
-                  href="#"
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
-                >
-                  DEFENSE
-                </a>
-                <a
-                  href="#"
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
-                >
-                  CLIMATE
-                </a>
-                <a
-                  href="#"
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8 text-foreground">
+            <nav className="flex items-center bg-background/20 backdrop-blur-sm border border-border rounded-full px-6 lg:px-8 py-2 shadow-sm">
+              <div className="flex items-center space-x-4 lg:space-x-8 text-sm font-medium">
+                <DropdownMenu>
+                  <DropdownMenuTrigger
+                    className="hover:bg-muted/10 px-3 py-2 rounded-full uppercase tracking-wide flex items-center gap-1 text-sm font-medium transition-colors focus:outline-none"
+                  >
+                    DEFENSE
+                    <ChevronDown className="w-4 h-4" />
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent
+                    align="start"
+                    className="mt-2 bg-surface backdrop-blur-md border border-border rounded-xl text-foreground w-44 shadow-lg"
+                  >
+                    <DropdownMenuItem asChild>
+                      <Link
+                        to="/defense/sea-watch"
+                        className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
+                      >
+                        SeaWatch
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link
+                        to="/defense/morpheus"
+                        className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
+                      >
+                        Morpheus
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+                <DropdownMenu>
+                  <DropdownMenuTrigger
+                    className="hover:bg-muted/10 px-3 py-2 rounded-full uppercase tracking-wide flex items-center gap-1 text-sm font-medium transition-colors focus:outline-none"
+                  >
+                    CLIMATE
+                    <ChevronDown className="w-4 h-4" />
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent
+                    align="start"
+                    className="mt-2 bg-surface backdrop-blur-md border border-border rounded-xl text-foreground w-44 shadow-lg"
+                  >
+                    <DropdownMenuItem asChild>
+                      <Link
+                        to="/climate/fire-watch"
+                        className="block w-full px-4 py-2 text-sm hover:bg-muted/10 rounded-md transition-colors"
+                      >
+                        FireWatch
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
+                <Link
+                  to="/company"
+                  className="hover:bg-muted/10 px-3 py-2 rounded-full uppercase tracking-wide text-sm font-medium transition-colors"
                 >
                   COMPANY
-                </a>
-                <a
-                  href="investor"
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
+                </Link>
+
+                <Link
+                  to="/investors"
+                  className="hover:bg-muted/10 px-3 py-2 rounded-full uppercase tracking-wide text-sm font-medium transition-colors"
                 >
-                  INVENTORS
-                </a>
+                  INVESTORS
+                </Link>
               </div>
             </nav>
 
-            <nav className="flex items-center 
-                            bg-slate-900/40 backdrop-blur-sm 
-                            border border-slate-700/60 
-                            rounded-full px-6 lg:px-8 py-2">
-              <div className="flex items-center space-x-4 lg:space-x-8 text-white text-sm font-medium">
-
-
-
-                <a
-                  href="/contact-us"
-                  className="hover:bg-white/10 px-3 py-2 rounded-full transition-colors duration-200 uppercase tracking-wide"
-                >
-                  contact us
-                </a>
-              </div>
+            <nav className="flex items-center bg-primary/10 backdrop-blur-sm border border-primary rounded-full px-6 lg:px-8 py-2 shadow-sm">
+              <Link
+                to="/contact-us"
+                className="hover:bg-primary/20 px-3 py-2 rounded-full uppercase tracking-wide text-sm font-medium transition-colors text-primary-foreground"
+              >
+                CONTACT US
+              </Link>
             </nav>
-
-            {/*<Button
-              className="bg-slate-900/40 backdrop-blur-sm border border-slate-700/60 
-                         text-white 
-                         hover:bg-white/10
-                         uppercase tracking-wide 
-                         rounded-full   
-                         px-6 py-2.5 text-sm font-semibold h-auto"
-            >
-              CONTACT US
-            </Button>*/}
           </div>
         </div>
       </div>

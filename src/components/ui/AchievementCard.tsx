@@ -8,7 +8,7 @@ interface AchievementCardProps {
 
 const AchievementCard: React.FC<AchievementCardProps> = ({ title, description, image }) => {
     return (
-        <div className="relative rounded-xl overflow-hidden shadow-lg border border-yellow-400/50 hover:scale-[1.02] transition-transform duration-300">
+        <div className="relative rounded-xl overflow-hidden shadow-lg border border-blue-400 hover:scale-[1.02] transition-transform duration-300">
             <img
                 src={image}
                 alt={description}
