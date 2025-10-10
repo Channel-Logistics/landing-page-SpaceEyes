@@ -1,10 +1,4 @@
-
-interface LeadersProps {
-     bio: string;
-     title: string;
-     name: string;
-     image: string;
-}
+import type { LeadersProps } from "@/components/types/Leaders";
 
 export const leaders: LeadersProps[] = [
         { image: "/images/jatin.webp", name: "JATIN S. BAINS", title: "Founder & CEO", bio: "40 years experience across the maritime and supply chain verticals. He represented USA on maritime security at the 2006 Hanoi APEC conference. He is the creator of our military-grade CATE™ System and holds a USPTO patent on eLogistics. He attended the Wharton Management Program, national security courses, ISR certifications and subject matter expert to US DoD." },
