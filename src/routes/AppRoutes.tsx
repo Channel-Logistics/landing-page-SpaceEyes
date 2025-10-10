@@ -15,9 +15,9 @@ export default function AppRoutes() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/investors" element={<Investors />} />
-        <Route path="/defense/sea-watch" element={<SeaWatch />} />
+        <Route path="/defense/seawatch" element={<SeaWatch />} />
         <Route path="/defense/morpheus" element={<Morpheus />} />
-        <Route path="/climate/fire-watch" element={<FireWatch />} />
+        <Route path="/climate/firewatch" element={<FireWatch />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/company" element={<Company />} />
       </Route>
