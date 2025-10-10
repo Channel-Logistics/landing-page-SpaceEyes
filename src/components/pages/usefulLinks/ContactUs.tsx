@@ -1,12 +1,10 @@
 import { FileText, Mail, MapPinCheck, PhoneCall } from "lucide-react";
 import type React from "react";
-import ScrollSnapSection from "../../ui/ScrollSnapSection";
 
 const background = "/images/slider/main-video.webp";
 
 const ContactUs: React.FC = () => {
   return (
-    <ScrollSnapSection>
       <div
         className="relative w-full min-h-screen text-contact-us-text px-6 pt-24 pb-32 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${background})` }}
@@ -125,7 +123,6 @@ const ContactUs: React.FC = () => {
           </div>
         </div>
       </div>
-    </ScrollSnapSection>
   );
 }
 

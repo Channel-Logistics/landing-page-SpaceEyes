@@ -7,6 +7,7 @@ import SeaWatch from "@/components/pages/defenses/Seawatch";
 import Morpheus from "@/components/pages/defenses/Morpheus";
 import FireWatch from "@/components/pages/climates/Firewatch";
 import ContactUs from "@/components/pages/usefulLinks/ContactUs";
+import Company from "@/components/pages/sections/Company";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
         <Route path="/defense/morpheus" element={<Morpheus />} />
         <Route path="/climate/fire-watch" element={<FireWatch />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/company" element={<Company />} />
       </Route>
     </Routes>
   );
