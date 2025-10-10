@@ -17,7 +17,7 @@ export default function Layout() {
         : "flex-grow";
 
     return (
-        <div className={containerClasses}>
+        <div id="main-scroll-container" className={containerClasses}>
             <Header />
             <main className={mainClasses}>
                 <Outlet />

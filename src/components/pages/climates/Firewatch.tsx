@@ -15,7 +15,7 @@ const Firewatch: React.FC = () => {
                >
                     <div className="absolute inset-0 bg-black/40"></div>
                </div>
-               <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+               <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-60">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                               FireWatch
