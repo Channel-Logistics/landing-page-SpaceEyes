@@ -1,7 +1,6 @@
 import React from 'react';
-import type { PrincipleBlockProps } from '../constants/principlData';
-
-const FeatureBlock: React.FC<PrincipleBlockProps> = ({ icon: Icon, title, subtitle, description, reverse, imageClass }) => (
+import type { PrincipleBlockProps } from '../constants/principlData'; 
+const FeatureBlock: React.FC<PrincipleBlockProps> = ({ icon: Icon, title, subtitle, description, reverse, imageUrl }) => (
     <div className={`flex flex-col md:flex-row items-center gap-12 pt-16 ${reverse ? 'md:flex-row-reverse' : ''}`}>
 
         <div className="md:w-1/2">
@@ -18,9 +17,10 @@ const FeatureBlock: React.FC<PrincipleBlockProps> = ({ icon: Icon, title, subtit
             <div className="h-0.5 w-16 bg-line-background mt-6 opacity-70"></div>
         </div>
         <div
-            className={`md:w-1/2 w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.01] ${imageClass} bg-cover bg-center`}
+            className={`md:w-1/2 w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.01] bg-cover bg-center`}
+            style={{ backgroundImage: `url(${imageUrl})` }}
         >
-            <div className="w-full h-full bg-section-background transition-colors duration-300"></div>
+            <div className="w-full h-full bg-section-background/50 transition-colors duration-300"></div> 
         </div>
     </div>
 );

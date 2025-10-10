@@ -1,7 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Target, Search, BarChart3, Database, TrendingUp, Cpu } from 'lucide-react'; 
-
-// Interfaz para los pasos del workflow
+import { Target, Search, BarChart3, Database, TrendingUp, Cpu } from 'lucide-react';
 export interface WorkflowStep {
     title: string;
     subtitle: string;
@@ -14,7 +12,7 @@ export const WorkflowSteps: WorkflowStep[] = [
         title: "Workflow",
         subtitle: "How We Deliver\nIntelligence @ Speed",
         description: "Esta es la tarjeta introductoria, que usa un diseño especial y no requiere descripción.",
-        icon: Cpu, // Usaremos un icono representativo
+        icon: Cpu,
     },
     {
         title: "COLLECT",
