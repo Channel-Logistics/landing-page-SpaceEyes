@@ -1,20 +1,23 @@
 import React from 'react';
 import ScrollSnapSection from '../ui/ScrollSnapSection';
 
-//const Background = "/images/background/bg-7.webp";
+const Background = "/images/slider/main-video.mp4";
 
 const SpaceSection: React.FC = () => {
      return (
           <ScrollSnapSection>
-               <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{
-                         //backgroundImage: `url(${Background})`,
-                    }}
-               >
-                    <div className="absolute inset-0 bg-section-background"></div>
+               <div className="absolute inset-0 overflow-hidden">
+                    <video
+                         className="w-full h-full object-cover"
+                         src={Background}
+                         autoPlay
+                         loop
+                         muted
+                         playsInline
+                    />
+                    <div className="absolute inset-0 bg-black opacity-60"></div>
                </div>
-               <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+               <div className="absolute bottom-16 left-0 right-0 z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                               Space Eyes

@@ -25,7 +25,7 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8 text-foreground">
-            <nav className="flex items-center bg-background/20 backdrop-blur-sm border border-border rounded-full px-6 lg:px-8 py-2 shadow-sm">
+            <nav className="flex items-center bg-background/20 backdrop-blur-sm  rounded-full px-6 lg:px-8 py-2 shadow-sm">
               <div className="flex items-center space-x-4 lg:space-x-8 text-sm font-medium">
                 <DropdownMenu>
                   <DropdownMenuTrigger
@@ -96,7 +96,7 @@ export default function Header() {
               </div>
             </nav>
 
-            <nav className="flex items-center bg-primary/10 backdrop-blur-sm border border-primary rounded-full px-6 lg:px-8 py-2 shadow-sm">
+            <nav className="flex items-center bg-primary/10 backdrop-blur-sm  rounded-full px-6 lg:px-8 py-2 shadow-sm">
               <Link
                 to="/contact-us"
                 className="hover:bg-primary/20 px-3 py-2 rounded-full uppercase tracking-wide text-sm font-medium transition-colors text-primary-foreground"

@@ -7,15 +7,16 @@ export interface PrincipleBlockProps {
      subtitle: string;
      description: string;
      reverse?: boolean;
-     imageClass: string;
+     imageUrl: string;
 }
+
 export const Principles: PrincipleBlockProps[] = [
      {
           icon: Zap,
           title: "Expertise Integration",
           subtitle: "ADVANCED TECHNOLOGY & SKILLS",
           description: "Leverages a blend of advanced technology and soft skills to deliver comprehensive solutions.",
-          imageClass: "bg-[url('/images/features/integration-bg.webp')]",
+          imageUrl: "/images/background/bg-27.webp",
           reverse: false,
      },
      {
@@ -23,7 +24,7 @@ export const Principles: PrincipleBlockProps[] = [
           title: "Actionable Insights",
           subtitle: "TIMELY & STRATEGIC DECISIONS",
           description: "Provides timely, precise insights that enable informed and strategic decision-making.",
-          imageClass: "bg-[url('/images/features/insights-bg.webp')]",
+          imageUrl: "/images/sea-watch.webp",
           reverse: true,
      },
      {
@@ -31,7 +32,7 @@ export const Principles: PrincipleBlockProps[] = [
           title: "Solutions for Global Challenges",
           subtitle: "ADDRESSING VITAL ISSUES",
           description: "Tackles critical issues such as maritime security, environmental risk management, wildfire mitigation, and financial risk assessment.",
-          imageClass: "bg-[url('/images/features/global-bg.webp')]",
+          imageUrl: "/images/background/bg-8.webp",
           reverse: false,
      },
      {
@@ -39,7 +40,7 @@ export const Principles: PrincipleBlockProps[] = [
           title: "Commitment to Sustainability",
           subtitle: "CARBON TRACKING & ECO-FOCUS",
           description: "Promotes sustainability through accurate carbon tracking and eco-conscious solutions.",
-          imageClass: "bg-[url('/images/features/sustain-bg.webp')]",
+          imageUrl: "/images/background/bg-6.webp",
           reverse: true,
      },
      {
@@ -47,7 +48,7 @@ export const Principles: PrincipleBlockProps[] = [
           title: "Real-Time Decision Support",
           subtitle: "NAVIGATING RAPID LANDSCAPES",
           description: "Equips clients with real-time insights, empowering them to navigate a rapidly evolving landscape and maintain a competitive edge.",
-          imageClass: "bg-[url('/images/features/realtime-bg.webp')]",
+          imageUrl: "/images/wild-fires.webp",
           reverse: false,
      },
 ];
