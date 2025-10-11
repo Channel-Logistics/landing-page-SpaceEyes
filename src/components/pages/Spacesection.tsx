@@ -17,7 +17,7 @@ const SpaceSection: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-black opacity-60"></div>
                </div>
-               <div className="absolute top-1/2 left-0 right-0 z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full transform -translate-y-1/2 mt-[-25px]">
+               <div className="absolute top-[45%] left-0 right-0 z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full transform -translate-y-1/2">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight animate-fade-up">
                               Space Eyes
