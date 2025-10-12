@@ -2,11 +2,14 @@ import React from 'react';
 import FeatureBlock from './FeatureBlock';
 import { Briefcase } from 'lucide-react';
 import { Principles } from '../constants/principlData';
+import AnimatedBackground from './AnimatedBackground';
+
 
 const CorePillarsSection: React.FC = () => {
     return (
-        <section className="relative">
-            <div className="absolute inset-0 bg-section-background"></div>
+        <section className="relative h-full w-full bg-black overflow-hidden min-h-[700px]">
+
+            <AnimatedBackground />
             <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20 md:py-40">
                 <div className="text-center mb-16">
                     <span className="inline-flex items-center space-x-2 text-lg font-semibold uppercase tracking-widest text-white/50 mb-3">
