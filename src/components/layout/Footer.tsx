@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import GlassContainer from './GlassContainer';
 
 const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
 
@@ -20,10 +21,13 @@ export default function Footer() {
                                     className="h-12 w-auto object-contain"
                                 />
                             </div>
-
-                            <p className="text-carousel-text-minimum mb-6 leading-relaxed text-sm max-w-md border border-carousel-text-minimum rounded-lg p-4">
-                                Space-Eyes, Inc was founded to address the growing demand for AI-powered predictions in Defense Tech and Disaster Tech, leveraging cutting-edge technology to enhance real-time decision-making and proactive risk management in these critical areas.
-                            </p>
+                            <GlassContainer
+                                className="inline-block mb-6 leading-relaxed text-sm max-w-md rounded-lg p-4 shadow-bottom-glow"
+                            >
+                                <p className="text-carousel-text-minimum">
+                                    Space-Eyes, Inc was founded to address the growing demand for AI-powered predictions in Defense Tech and Disaster Tech, leveraging cutting-edge technology to enhance real-time decision-making and proactive risk management in these critical areas.
+                                </p>
+                            </GlassContainer>
 
                             <div className="flex gap-4">
                                 <a
