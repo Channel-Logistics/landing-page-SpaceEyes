@@ -8,10 +8,9 @@ const ContainerLeaderComponent: React.FC = () => {
 
     return (
         <>
-            <div className="flex justify-center gap-20">
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-10 sm:gap-20">
                 {leaders.slice(0, 3).map((leader, i) => {
-                    const absoluteIndex = i + 0;
-
+                    const absoluteIndex = i;
                     return (
                         <LeaderCard
                             leader={leader}
@@ -24,10 +23,9 @@ const ContainerLeaderComponent: React.FC = () => {
                 })}
             </div>
 
-            <div className="flex justify-center gap-20">
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-10 sm:gap-20 mt-10">
                 {leaders.slice(3, 6).map((leader, i) => {
                     const absoluteIndex = i + 3;
-
                     return (
                         <LeaderCard
                             leader={leader}
@@ -40,10 +38,9 @@ const ContainerLeaderComponent: React.FC = () => {
                 })}
             </div>
 
-            <div className="flex justify-center gap-20">
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-10 sm:gap-20 mt-10">
                 {leaders.slice(6, 10).map((leader, i) => {
                     const absoluteIndex = i + 6;
-
                     return (
                         <LeaderCard
                             leader={leader}
@@ -57,7 +54,6 @@ const ContainerLeaderComponent: React.FC = () => {
             </div>
         </>
     );
-}
+};
 
 export default ContainerLeaderComponent;
-
