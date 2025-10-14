@@ -1,35 +1,47 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import FOG from 'vanta/dist/vanta.fog.min';
+import * as THREE from 'three';
+interface VantaEffect {
+    destroy: () => void;
+    setOptions: (options: any) => void;
+}
 
 const AnimatedBackground: React.FC = () => {
+    const vantaRef = useRef<HTMLDivElement>(null);
+    const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null);
+
+    useEffect(() => {
+        if (!vantaEffect && vantaRef.current) {
+
+            setVantaEffect(
+                FOG({
+                    el: vantaRef.current,
+                    THREE: THREE,
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    highlightColor: 0x999999,
+                    midtoneColor: 0x1a1a1a,
+                    lowlightColor: 0x0a0a0a,
+                    baseColor: 0x000000,
+
+                    blurFactor: 0.9,
+                    speed: 3.0,
+                    zoom: 0.8
+
+                }) as VantaEffect
+            );
+        }
+
+        return () => {
+            if (vantaEffect) vantaEffect.destroy();
+        };
+    }, [vantaEffect]);
+
     return (
-        <div className="absolute inset-0 z-0">
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-space-grid"></div>
-            <div 
-                className="absolute left-0 right-0 top-[0%] h-[1000px] w-[1000px] rounded-full bg-space-spotlight"
-            ></div>
-            <div 
-                className="absolute w-[180vw] h-[180vh] rounded-full blur-[380px] opacity-70 pointer-events-none animate-slow-float bg-nebula-soft-blue"
-                style={{ 
-                    top: '20%', 
-                    left: '-10%',
-                }}
-            />
-            <div 
-                className="absolute w-[150vw] h-[150vh] rounded-full blur-[300px] opacity-60 pointer-events-none animate-slow-float-alt bg-nebula-deep-blue"
-                style={{ 
-                    bottom: '10%',
-                    right: '-20%',
-                }}
-            />
-            <div 
-                className="absolute w-[100vw] h-[100vh] rounded-full blur-[250px] opacity-50 pointer-events-none animate-slow-float bg-nebula-faint-white"
-                style={{ 
-                    top: '40%', 
-                    right: '10%',
-                    animationDuration: '70s',
-                }}
-            />
-        </div>
+        <div ref={vantaRef} className="absolute inset-0 z-0"></div>
     );
 };
 
