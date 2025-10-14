@@ -10,13 +10,15 @@ const ScrollSnapSection: React.FC<ScrollSnapSectionProps> = ({ children, delay =
     return (
         <motion.section
             className="snap-start relative min-h-screen w-full flex items-center justify-center overflow-hidden"
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            
+            initial={{ opacity: 0, translateY: '50px' }}
+            whileInView={{ opacity: 1, translateY: '0px' }}
+            viewport={{ once: true, amount: 0.3 }} 
+            
             transition={{
-                duration: 0.8,
+                duration: 0.7,
                 delay: delay,
-                ease: [0.22, 1, 0.36, 1],
+                ease: [0.22, 1, 0.36, 1], 
             }}
         >
             {children}
