@@ -5,6 +5,7 @@
 
 
 @theme inline {
+
   --radius: 0.5rem;
   --background: hsl(0 0% 100%);
   --foreground: hsl(222.2 84% 4.9%);
@@ -96,5 +97,22 @@ html, body {
   }
   .bg-space-spotlight {
       background-image: radial-gradient(circle 450px at 50% 500px, #fbfbfb36, #000);
+  }
+}
+
+@layer utilities {
+  .bg-background-secondary {
+    background-color: var(--color-hero-background);
+    color: var(--color-hero-text);
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .bg-background-secondary:hover {
+    background-color: hsl(0 0% 95%);
+  }
+
+  .text-background-secondary {
+    color: var(--color-hero-text);
   }
 }
