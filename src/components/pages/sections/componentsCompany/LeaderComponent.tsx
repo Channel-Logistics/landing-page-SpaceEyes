@@ -18,6 +18,8 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
     hoveredIndex,
     setHoveredIndex,
 }) => {
+    const isHovered = hoveredIndex === index;
+    
     return (
         <div
             className="w-80 h-80 rounded-2xl shadow-lg flex flex-col justify-end text-left transition-all duration-300 drop-shadow-2xl overflow-hidden relative cursor-pointer"
@@ -28,6 +30,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
             }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            onTouchStart={() => setHoveredIndex(isHovered ? null : index)}
         >
             <div
                 className="w-full px-4 py-2 rounded-b-2xl transition-opacity duration-300"
@@ -62,7 +65,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
                     </p>
                 )}
             </div>
-            
+
         </div>
     );
 };

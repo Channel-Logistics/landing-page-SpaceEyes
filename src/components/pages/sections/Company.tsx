@@ -8,7 +8,7 @@ const Backgrond = "/images/slider/main-video.mp4"
 const Company: React.FC = () => {
     return (
         <div className="overflow-x-hidden">
-            <div className="relative w-full h-[520px] overflow-hidden">
+            <div className="relative w-full h-[50vh] overflow-hidden">
                 <video
                     autoPlay
                     loop
