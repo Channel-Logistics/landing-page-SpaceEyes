@@ -88,7 +88,7 @@ const ContactUs: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-contact-us-background-from via-contact-us-background-via to-contact-us-background-to rounded-2xl py-3 text-contact-us-text text-lg font-semibold shadow-[0_0_15px_rgba(63,63,70,0.4)] hover:shadow-[0_0_25px_rgba(148,163,184,0.5)] hover:opacity-90 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-contact-us-background-from via-contact-us-background-via to-contact-us-background-to rounded-2xl py-3 text-contact-us-text text-lg font-semibold shadow-contact-us-button"
               >
                 Submit Form
               </button>
