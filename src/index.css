@@ -34,11 +34,23 @@
   --color-section-background: #000000;
   --color-section-border: #1574C2;
   --color-text-button: #373737;
-  --color-contact-us-border: #FFFFFF;
+  --color-contact-us-border: rgba(55, 65, 81, 0.4);
   --color-contact-us-text: #FFFFFF;
-  --color-contact-us-background: rgba(37, 37, 44, 0.92);
-  --color-contact-us-fields-background: rgba(255, 255, 255, 0.1);
-  --color-contact-us-fields-border: rgba(255, 255, 255, 0.3);
+  --color-contact-us-background-from: #0f172a;
+  --color-contact-us-background-via: #051530;
+  --color-contact-us-background-to: #020c1e;
+  --color-contact-us-fields-background: rgba(255, 255, 255, 0.2);
+  --color-contact-us-title: #D1D5DB;
+}
+
+.shadow-contact-us-button {
+  box-shadow: 0 0 15px rgba(63, 63, 70, 0.4);
+  transition: all 0.3s ease;
+}
+
+.shadow-contact-us-button:hover {
+  box-shadow: 0 0 25px rgba(148, 163, 184, 0.5);
+  opacity: 0.9;
 }
 
 @theme dark {
