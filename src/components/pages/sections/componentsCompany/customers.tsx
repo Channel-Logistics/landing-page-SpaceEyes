@@ -46,15 +46,15 @@ const Customers: React.FC = () => {
               key={index}
               className="carousel-item"
               style={{
-                transform: "scale(0.9)",
-                width: "104px",
-                height: "104px",
+                transform: "scale(1)",
+                width: "8%",
+                height: "8%",
               }}
             >
               <img
                 src={c.image}
                 alt={`customer-${index + 1}`}
-                className="rounded-3xl shadow-lg h-26 w-26 object-contain"
+                className="rounded-4xl shadow-lg h-26 w-26 object-contain"
               />
             </div>
           ))}
