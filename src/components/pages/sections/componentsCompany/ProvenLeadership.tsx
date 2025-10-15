@@ -9,8 +9,8 @@ const ProvenLeadership: React.FC = () => {
             className="relative w-screen min-h-screen bg-section-background text-line-background flex flex-col items-center justify-center px-10 py-20"
         >
             <AnimatedBackground />
-            <div className="relative z-10 flex flex-col items-start justify-start pt-4 pb-24 px-8 w-full max-w-7xl">
-                <h2 className="text-4xl font-semibold drop-shadow-lg relative inline-block mb-2">
+            <div className="relative z-10 flex flex-col items-start justify-center pt-4 pb-24 px-8 w-full max-w-7xl md:ml-196">
+                <h2 className="text-2xl md:text-4xl font-semibold drop-shadow-lg relative inline-block mb-2">
                     Proven Leadership
                     <svg
                         className="absolute -right-20 top-1/2 -translate-y-1/2"
