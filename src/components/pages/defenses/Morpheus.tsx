@@ -18,10 +18,10 @@ const Morpheus: React.FC = () => {
                </div>
                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-60">
                     <div className="max-w-6xl">
-                         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                         <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                               Morpheus
                          </h1>
-                         <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-full opacity-95">
+                         <p className="text-sm md:text-xl text-white mb-8 leading-relaxed max-w-full opacity-95">
                               Morpheus delivers a next-generation Counter-Unmanned Aerial System
                               (C-UAS) solution that fuses advanced RF signal processing, artificial
                               intelligence, and quantum-resistant security. It detects, classifies,
