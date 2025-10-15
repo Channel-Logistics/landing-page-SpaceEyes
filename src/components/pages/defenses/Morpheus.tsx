@@ -29,7 +29,9 @@ const Morpheus: React.FC = () => {
                               real-time situational awareness, autonomous response, and seamless
                               coordination across complex electromagnetic environments.
                          </p>
-                         <ButtonLanding />
+                         <ButtonLanding
+                              children="COMMING SOON"
+                         />
                     </div>
                </div>
           </ScrollSnapSection>

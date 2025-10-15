@@ -5,7 +5,7 @@ interface ButtonProps {
   children?: React.ReactNode;
 }
 
-const ButtonLanding: React.FC<ButtonProps> = ({ onClick, children = "LEARN MORE" }) => {
+const ButtonLanding: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}

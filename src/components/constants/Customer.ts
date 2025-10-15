@@ -10,5 +10,19 @@ export const Customer: CustomersProps[] = [
     { image: "/images/customer7.webp" },
     { image: "/images/customer8.webp" },
     { image: "/images/customer9.webp" },
-    { image: "/images/customer10.webp" }
+    { image: "/images/customer10.webp" },
+    { image: "/images/unseen-labs.webp" },
+    { image: "/images/umbra-b.webp" },
+    { image: "/images/surrey-b.webp" },
+    { image: "/images/snp.webp" }, 
+    { image: "/images/sigma.webp" },
+    { image: "/images/planet-b.webp" },
+    { image: "/images/orbcomm-b.webp" },
+    { image: "/images/louis.webp" },
+    { image: "/images/kleos-b.webp" },
+    { image: "/images/ihs.webp" },
+    { image: "/images/hawk-b.webp" },
+    { image: "/images/aws.webp" },
+    { image: "/images/bs.webp" },
+    { image: "/images/aeronix-b.webp" }
 ]

@@ -24,7 +24,9 @@ const Firewatch: React.FC = () => {
                               FireWatch™ addresses the growing<br className="block" />
                               wildfire crisis with predictive and real-time tools
                          </p>
-                         <ButtonLanding />
+                         <ButtonLanding
+                              children="LEARN MORE"
+                         />
                     </div>
                </div>
           </ScrollSnapSection>

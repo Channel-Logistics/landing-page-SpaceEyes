@@ -20,7 +20,7 @@ const SpaceSection: React.FC = () => {
                <div className="absolute top-[45%] left-0 right-0 z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full transform -translate-y-1/2">
                     <div className="max-w-6xl">
                          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight animate-fade-up">
-                              Space Eyes
+                              Space-Eyes
                          </h1>
                          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-full opacity-95 animate-fade-up animate-delay-200">
                               Over the years, we have strategically broadened our capabilities to encompass a wide array of advanced technologies and services, including Space Domain Awareness, Maritime Intelligence, Wildfire Detection and Mitigation, Carbon Emissions and Biomass Tracking, and Predictive Financial Risk Analytics. Supported by a highly experienced Board of Directors and Advisory Board and two decades of proven leadership, we have built strong, lasting relationships across the Aerospace, Defense, and other vital industries.

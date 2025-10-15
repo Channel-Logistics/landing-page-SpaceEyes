@@ -24,7 +24,9 @@ const SeaWatch: React.FC = () => {
                               SeaWatch™ offers insights into<br className="block" />
                               maritime activity, supporting trade, security, and sustainability
                          </p>
-                         <ButtonLanding />
+                         <ButtonLanding
+                              children="LEARN MORE"
+                         />
                     </div>
                </div>
           </ScrollSnapSection>
