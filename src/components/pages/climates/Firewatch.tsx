@@ -1,11 +1,13 @@
 import React from 'react';
 import ScrollSnapSection from '../../ui/ScrollSnapSection';
 import ButtonLanding from '@/components/ui/buttonlanding';
+import FireWatchCorePillarsSection from './sections/SectionsFireWatch';
 
 const Background = "/images/background/bg-5.webp";
 
 const Firewatch: React.FC = () => {
      return (
+          <>
           <ScrollSnapSection>
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -31,6 +33,8 @@ const Firewatch: React.FC = () => {
                     </div>
                </div>
           </ScrollSnapSection>
+          <FireWatchCorePillarsSection />
+          </>
      );
 };
 
