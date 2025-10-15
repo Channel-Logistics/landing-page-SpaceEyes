@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollSnapSection from '../ui/ScrollSnapSection';
 
-const Background = "/images/slider/main-video_1.webm";
+const Background = "/images/slider/main-video.webm";
 
 const SpaceSection: React.FC = () => {
      return (
