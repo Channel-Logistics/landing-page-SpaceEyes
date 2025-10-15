@@ -17,10 +17,10 @@ const Firewatch: React.FC = () => {
                </div>
                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-60">
                     <div className="max-w-6xl">
-                         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                         <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                               FireWatch
                          </h1>
-                         <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
+                         <p className="text-sm md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
                               FireWatch™ addresses the growing<br className="block" />
                               wildfire crisis with predictive and real-time tools
                          </p>

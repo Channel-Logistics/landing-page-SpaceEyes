@@ -14,9 +14,11 @@ export default function Header(): JSX.Element {
   const isDefenseActive = location.pathname.startsWith("/defense");
   const isClimateActive = location.pathname.startsWith("/climate");
 
-  const baseButton = "px-3 py-2 rounded-full uppercase tracking-wide text-sm font-medium transition-colors focus:outline-none flex items-center gap-1";
+  const baseButton = "px-3 py-2 rounded-full tracking-wide text-sm font-medium transition-colors focus:outline-none flex items-center gap-1";
+  const baseButtonContact = "px-5 py-4 rounded-full tracking-wide text-sm font-medium transition-colors focus:outline-none flex items-center";
   const inactiveButton = "text-white/80 hover:text-white hover:bg-white/10";
   const activeButton = "bg-white text-black font-semibold shadow-sm";
+  const activeButtonContact = "bg-white text-black font-semibold";
   const baseNavLink = "block w-full px-4 py-2 text-sm rounded-md transition-colors";
   const inactiveNavLink = "text-white/80 hover:text-white hover:bg-white/10";
   const activeNavLink = "bg-white text-black font-semibold";
@@ -125,11 +127,11 @@ export default function Header(): JSX.Element {
               </nav>
             </GlassContainer>
 
-            <GlassContainer className="flex items-center rounded-full px-6 lg:px-8 py-2 shadow-sm bg-white/10">
+            <GlassContainer className="flex items-center rounded-full bg-white/10">
               <NavLink
                 to="/contact-us"
                 className={({ isActive }) =>
-                  `${baseButton} ${isActive ? activeButton : inactiveButton}`
+                  `${baseButtonContact} ${isActive ? activeButtonContact : inactiveButton}`
                 }
               >
                 CONTACT US
