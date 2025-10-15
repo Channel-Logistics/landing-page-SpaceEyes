@@ -13,11 +13,12 @@ const SeaWatchFeatureBlock: React.FC<SeaWatchProps> = ({ title, description, rev
             </p>
             <div className="h-0.5 w-16 bg-line-background mt-6 opacity-70"></div>
         </div>
-        <div
-            className={`md:w-1/2 w-full h-79 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.01] bg-cover bg-center`}
-            style={{ backgroundImage: `url(${image})` }}
-        >
-            <div className="w-full h-full bg-section-background/30 transition-colors duration-300"></div> 
+        <div className="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.01] bg-section-background/30">
+            <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover rounded-2xl"
+            />
         </div>
     </div>
 );
