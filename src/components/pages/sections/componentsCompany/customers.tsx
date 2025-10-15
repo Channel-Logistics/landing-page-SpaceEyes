@@ -1,6 +1,6 @@
 import type React from "react";
 import { Customer } from "@/components/constants/Customer";
-import AnimatedBackground from "../../AnimatedBackground";
+import AnimatedBackground from "@/components/pages/AnimatedBackground"
 
 const Customers: React.FC = () => {
   const duplicatedCustomers = [...Customer, ...Customer];

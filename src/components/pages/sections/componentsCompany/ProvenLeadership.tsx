@@ -1,12 +1,12 @@
 import type React from "react";
 import ContainerLeaderComponent from "./containerLeadercomponent";
-import AnimatedBackground from "../../AnimatedBackground";
+import AnimatedBackground from "@/components/pages/AnimatedBackground"
 
 const ProvenLeadership: React.FC = () => {
     
     return (
         <div
-            className="relative w-screen min-h-screen bg-black text-white flex flex-col items-center justify-center px-10 py-20"
+            className="relative w-screen min-h-screen bg-section-background text-line-background flex flex-col items-center justify-center px-10 py-20"
         >
             <AnimatedBackground />
             <div className="relative z-10 flex flex-col items-start justify-start pt-4 pb-24 px-8 w-full max-w-7xl">
