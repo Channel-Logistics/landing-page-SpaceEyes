@@ -1,17 +1,15 @@
 import type React from "react";
 import ContainerLeaderComponent from "./containerLeadercomponent";
-
-const Background = "/images/background/image-27.webp"
+import AnimatedBackground from "../../AnimatedBackground";
 
 const ProvenLeadership: React.FC = () => {
     
-
     return (
         <div
-            className="w-screen min-h-screen bg-cover bg-center text-white flex flex-col items-center justify-center px-10 py-20"
-            style={{ backgroundImage: `url(${Background})` }}
+            className="relative w-screen min-h-screen bg-black text-white flex flex-col items-center justify-center px-10 py-20"
         >
-            <div className="flex flex-col items-start justify-start pt-4 pb-24 px-8">
+            <AnimatedBackground />
+            <div className="relative z-10 flex flex-col items-start justify-start pt-4 pb-24 px-8 w-full max-w-7xl">
                 <h2 className="text-4xl font-semibold drop-shadow-lg relative inline-block mb-2">
                     Proven Leadership
                     <svg
@@ -28,8 +26,7 @@ const ProvenLeadership: React.FC = () => {
 
                 <div className="w-32 h-1 bg-current"></div>
             </div>
-
-            <div className="flex flex-col gap-15 w-full max-w-7xl">
+            <div className="relative z-10 flex flex-col gap-15 w-full max-w-7xl">
                 <ContainerLeaderComponent />
             </div>
         </div>
