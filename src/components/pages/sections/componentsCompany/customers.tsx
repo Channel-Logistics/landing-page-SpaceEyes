@@ -1,16 +1,15 @@
 import type React from "react";
 import { Customer } from "@/components/constants/Customer";
-
-const Background = "/images/background/image-27.webp";
+import AnimatedBackground from "@/components/pages/AnimatedBackground"
 
 const Customers: React.FC = () => {
   const duplicatedCustomers = [...Customer, ...Customer];
 
   return (
     <div
-      className="w-screen py-16 flex justify-center overflow-hidden relative bg-cover bg-center"
-      style={{ backgroundImage: `url(${Background})` }}
+      className="relative w-screen py-16 flex justify-center overflow-hidden bg-black"
     >
+      <AnimatedBackground />
       <style>
         {`
           @keyframes scroll-infinite {
@@ -34,8 +33,7 @@ const Customers: React.FC = () => {
           }
         `}
       </style>
-
-      <div className="carousel-container w-full flex items-center">
+      <div className="carousel-container w-full flex items-center relative z-10">
         <div className="carousel-track">
           {duplicatedCustomers.map((c, index) => (
             <div

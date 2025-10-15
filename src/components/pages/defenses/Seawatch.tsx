@@ -19,10 +19,10 @@ const SeaWatch: React.FC = () => {
                     </div>
                     <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-60">
                          <div className="max-w-6xl">
-                              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+                              <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                                    SeaWatch
                               </h1>
-                              <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
+                              <p className="text-sm md:text-xl text-white mb-8 leading-relaxed max-w-2xl opacity-95 drop-shadow-md">
                                    SeaWatch™ offers insights into<br className="block" />
                                    maritime activity, supporting trade, security, and sustainability
                               </p>
@@ -32,7 +32,7 @@ const SeaWatch: React.FC = () => {
                          </div>
                     </div>
                </ScrollSnapSection>
-               
+
                <SeaWatchCorePillarsSection />
           </>
      );
