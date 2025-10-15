@@ -4,11 +4,11 @@ import { Customer } from "@/components/constants/Customer";
 const Background = "/images/background/image-27.webp";
 
 const Customers: React.FC = () => {
-  const duplicatedCustomers = [...Customer, ...Customer, ...Customer];
+  const duplicatedCustomers = [...Customer, ...Customer];
 
   return (
     <div
-      className="w-screen py-16 flex justify-center overflow-hidden relative"
+      className="w-screen py-16 flex justify-center overflow-hidden relative bg-cover bg-center"
       style={{ backgroundImage: `url(${Background})` }}
     >
       <style>
@@ -18,23 +18,19 @@ const Customers: React.FC = () => {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(calc(-100% / 3));
+              transform: translateX(-50%);
             }
           }
 
           .carousel-track {
             display: flex;
-            gap: 2.25rem;
-            animation: scroll-infinite 40s linear infinite;
-            will-change: transform;
+            gap: 2rem;
+            animation: scroll-infinite 50s linear infinite;
+            width: max-content;
           }
 
           .carousel-container:hover .carousel-track {
             animation-play-state: paused;
-          }
-
-          .carousel-item {
-            flex-shrink: 0;
           }
         `}
       </style>
@@ -44,17 +40,16 @@ const Customers: React.FC = () => {
           {duplicatedCustomers.map((c, index) => (
             <div
               key={index}
-              className="carousel-item"
+              className="flex items-center justify-center flex-shrink-0 shadow-md hover:scale-105 transition-transform"
               style={{
-                transform: "scale(1)",
-                width: "8%",
-                height: "8%",
+                width: "6%",
+                height: "6%",
               }}
             >
               <img
                 src={c.image}
                 alt={`customer-${index + 1}`}
-                className="rounded-4xl shadow-lg h-26 w-26 object-contain"
+                className="object-contain w-full h-full rounded-3xl"
               />
             </div>
           ))}
