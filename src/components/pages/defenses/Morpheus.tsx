@@ -9,30 +9,27 @@ const Morpheus: React.FC = () => {
           <ScrollSnapSection>
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url(${Background})` }}
+                    style={{
+                         backgroundImage: `url(${Background})`,
+                    }}
                >
-                    <div className="absolute inset-0 bg-black/40 from-black/80 via-black/40 to-transparent" />
+                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
                </div>
-
-               <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 sm:pt-48 md:pt-56 lg:pt-60 xl:pt-72">
-                    <div className="max-w-5xl">
-                         <h1
-                              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white mb-4 sm:mb-6 leading-tight tracking-tight drop-shadow-lg"
-                         >
+               <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-60">
+                    <div className="max-w-6xl">
+                         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                               Morpheus
                          </h1>
-
-                         <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-white mb-6 sm:mb-8 leading-relaxed opacity-95max-w-prose">
-                              Morpheus delivers a next-generation Counter-Unmanned Aerial System (C-UAS)
-                              solution that fuses advanced RF signal processing, artificial intelligence,
-                              and quantum-resistant security. It detects, classifies, and neutralizes
-                              airborne threats with unmatched precision—offering real-time situational
-                              awareness, autonomous response, and seamless coordination across complex
-                              electromagnetic environments.
+                         <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-full opacity-95">
+                              Morpheus delivers a next-generation Counter-Unmanned Aerial System
+                              (C-UAS) solution that fuses advanced RF signal processing, artificial
+                              intelligence, and quantum-resistant security. It detects, classifies,
+                              and neutralizes airborne threats with unmatched precision—offering
+                              real-time situational awareness, autonomous response, and seamless
+                              coordination across complex electromagnetic environments.
                          </p>
-                         <div className="flex justify-start">
-                              <ButtonLanding />
-                         </div>
+                         <ButtonLanding />
                     </div>
                </div>
           </ScrollSnapSection>
