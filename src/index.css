@@ -37,8 +37,8 @@
   --color-contact-us-border: rgba(55, 65, 81, 0.4);
   --color-contact-us-text: #FFFFFF;
   --color-contact-us-background-from: #0f172a;
-  --color-contact-us-background-via: #0f172a;
-  --color-contact-us-background-to: #1e293b;
+  --color-contact-us-background-via: #051530;
+  --color-contact-us-background-to: #020c1e;
   --color-contact-us-fields-background: rgba(255, 255, 255, 0.2);
   --color-contact-us-title: #D1D5DB;
 }
@@ -69,8 +69,9 @@
   --border: hsl(213 32% 20%);
   --ring: hsl(210 100% 60%);
 }
+
 .glass-header {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(20px) saturate(180%) contrast(105%);
   -webkit-backdrop-filter: blur(20px) saturate(180%) contrast(105%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -78,37 +79,56 @@
   transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
-html, body {
+html,
+body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: system-ui, sans-serif;
 }
 
 @keyframes slow-float {
-  0%, 100% { transform: translate(0, 0) scale(1.0); }
-  50% { transform: translate(5%, 10%) scale(1.02); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1.0);
+  }
+
+  50% {
+    transform: translate(5%, 10%) scale(1.02);
+  }
 }
 
 @keyframes slow-float-alt {
-  0%, 100% { transform: translate(0, 0) scale(1.0); }
-  50% { transform: translate(-8%, -4%) scale(0.98); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1.0);
+  }
+
+  50% {
+    transform: translate(-8%, -4%) scale(0.98);
+  }
 }
+
 @layer utilities {
   .animate-slow-float {
-      animation: slow-float 60s ease-in-out infinite alternate;
+    animation: slow-float 60s ease-in-out infinite alternate;
   }
+
   .animate-slow-float-alt {
-      animation: slow-float-alt 90s ease-in-out infinite alternate;
+    animation: slow-float-alt 90s ease-in-out infinite alternate;
   }
 }
+
 @layer utilities {
   .bg-space-grid {
-      background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), 
-                        linear-gradient(to bottom, #8080800a 1px, transparent 1px);
-      background-size: 14px 24px;
+    background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+      linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+    background-size: 14px 24px;
   }
+
   .bg-space-spotlight {
-      background-image: radial-gradient(circle 450px at 50% 500px, #fbfbfb36, #000);
+    background-image: radial-gradient(circle 450px at 50% 500px, #fbfbfb36, #000);
   }
 }
 
