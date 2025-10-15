@@ -33,7 +33,7 @@ const SeaWatchCorePillarsSection: React.FC = () => {
         return <section ref={sectionRef} className="relative w-full bg-black h-full"></section>;
     }
     return (
-        <section ref={sectionRef} className="relative h-full w-screen bg-black overflow-hidden">
+        <section ref={sectionRef} className="relative h-full w-full bg-black overflow-hidden">
 
             <AnimatedBackground />
             <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20 md:py-20">
