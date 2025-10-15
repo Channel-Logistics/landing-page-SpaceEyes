@@ -1,11 +1,9 @@
-import Header from "./components/layout/Header"
 
-function App() {
+import AppRoutes from "./routes/AppRoutes";
+
+
+export default function App() {
   return (
-    <div className="relative h-screen">
-      <Header />
-    </div>
-  )
+      <AppRoutes />
+  );
 }
-
-export default App
