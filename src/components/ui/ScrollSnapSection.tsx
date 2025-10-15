@@ -13,7 +13,7 @@ const ScrollSnapSection: React.FC<ScrollSnapSectionProps> = ({ children, delay =
 
             initial={{ opacity: 0, translateY: '5vh' }}
             whileInView={{ opacity: 1, translateY: '0vh' }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }} 
 
             transition={{
                 duration: 0.7,
