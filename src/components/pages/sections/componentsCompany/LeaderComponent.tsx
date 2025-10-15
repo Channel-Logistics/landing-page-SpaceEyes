@@ -22,7 +22,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
     
     return (
         <div
-            className="w-80 h-80 rounded-2xl shadow-lg flex flex-col justify-end text-left transition-all duration-300 drop-shadow-2xl overflow-hidden relative cursor-pointer"
+            className="w-90 h-90 rounded-2xl shadow-lg flex flex-col justify-end text-left transition-all duration-300 drop-shadow-2xl overflow-hidden relative cursor-pointer"
             style={{
                 backgroundImage: `url(${leader.image})`,
                 backgroundSize: "cover",
