@@ -5,21 +5,29 @@ import WorkflowSection from "../Carrousel";
 import ScrollSnapSection from "@/components/ui/ScrollSnapSection";
 import { FeatureCarousel } from "@/components/features";
 
-const snapSections: ElementType[] = [
+const snapSectionsBefore: ElementType[] = [
     SpaceSection,
-    FeatureCarousel,
+];
+
+const snapSectionsAfter: ElementType[] = [
     WorkflowSection,
+    FeatureCarousel,
 ];
 
 export default function Home() {
     return (
         <>
-            {snapSections.map((SectionComponent, index) => (
-                <ScrollSnapSection key={index}>
+            {snapSectionsBefore.map((SectionComponent, index) => (
+                <ScrollSnapSection key={`before-${index}`}>
                     <SectionComponent />
                 </ScrollSnapSection>
             ))}
             <CorePillarsSection />
+            {snapSectionsAfter.map((SectionComponent, index) => (
+                <ScrollSnapSection key={`after-${index}`}>
+                    <SectionComponent />
+                </ScrollSnapSection>
+            ))}
         </>
     );
 }
