@@ -25,6 +25,7 @@ const Firewatch: React.FC = () => {
                               wildfire crisis with predictive and real-time tools
                          </p>
                          <ButtonLanding
+                              onClick={() => window.open("https://fires.space-eyes.com", "_blank")}
                               children="LEARN MORE"
                          />
                     </div>
