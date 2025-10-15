@@ -25,6 +25,7 @@ const SeaWatch: React.FC = () => {
                               maritime activity, supporting trade, security, and sustainability
                          </p>
                          <ButtonLanding
+                              onClick={() => window.open("https://fires.space-eyes.com", "_blank")}
                               children="LEARN MORE"
                          />
                     </div>
