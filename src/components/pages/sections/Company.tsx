@@ -3,21 +3,13 @@ import ProvenLeadership from "./componentsCompany/ProvenLeadership";
 import Honors from "./componentsCompany/honors";
 import Customers from "./componentsCompany/customers";
 
-const Backgrond = "/images/slider/main-video.mp4"
+const Background = "/images/slider/main-video.webp"
 
 const Company: React.FC = () => {
     return (
         <div className="overflow-x-hidden">
-            <div className="relative w-full h-[50vh] overflow-hidden">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="absolute top-0 left-0 w-full h-full object-cover brightness-50"
-                >
-                    <source src={Backgrond} type="video/mp4" />
-                </video>
+            <div className="relative w-full h-[50vh] overflow-hidden"
+                 style={{ backgroundImage: `url(${Background})`, backgroundPosition: "center top -160px" }}>
 
                 <div className="relative z-10 flex flex-col items-start justify-end h-full pb-10 sm:pb-16 md:pb-20 text-white px-6 sm:px-10 md:pl-40">
                     <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 tracking-wide">
