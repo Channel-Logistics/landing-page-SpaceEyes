@@ -80,7 +80,7 @@ export default function Footer() {
                                     </h3>
                                     <ul className="space-y-3">
                                         <li>
-                                            <Link to="/about-us" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
+                                            <Link to="/company" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
                                                 About Us
                                             </Link>
                                         </li>
