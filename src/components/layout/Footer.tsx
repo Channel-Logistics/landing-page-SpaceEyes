@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import GlassContainer from './GlassContainer';
@@ -58,17 +57,17 @@ export default function Footer() {
                                     </h3>
                                     <ul className="space-y-3">
                                         <li>
-                                            <Link to="/docs" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
+                                            <Link to="/climate/firewatch" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
                                                 FireWatch
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/docs" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
+                                            <Link to="/defense/seawatch" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
                                                 SeaWatch
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="/docs" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
+                                            <Link to="/defense/morpheus" className="text-carousel-text-minimum hover:text-carousel-text-primary transition-colors text-sm">
                                                 Morpheus
                                             </Link>
                                         </li>

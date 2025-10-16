@@ -1,4 +1,4 @@
-import React, { type ElementType } from 'react';
+import { type ElementType } from 'react';
 import SpaceSection from "../Spacesection";
 import CorePillarsSection from "../CorePillarsSection";
 import WorkflowSection from "../Carrousel";
