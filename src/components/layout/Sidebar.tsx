@@ -115,7 +115,7 @@ export default function Sidebar({
                         </nav>
 
                         <p className="text-white/50 text-xs mt-auto text-center">
-                            © {new Date().getFullYear()} SpaceEyes. All rights reserved.
+                            © {new Date().getFullYear()} Space-Eyes. All rights reserved.
                         </p>
                     </motion.aside>
                 </>
