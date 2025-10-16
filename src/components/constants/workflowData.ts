@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Target, Search, BarChart3, Database, TrendingUp, Cpu } from 'lucide-react';
+import { Search, BarChart3, Database, TrendingUp, Cpu } from 'lucide-react';
 export interface WorkflowStep {
     title: string;
     subtitle: string;
