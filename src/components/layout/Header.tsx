@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import GlassContainer from "@/components/layout/GlassContainer";
 import Sidebar from "./Sidebar"
 
-const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
+const SpaceEyesLogoPath = "/logos/space-eyes-w1.webp";
 
 export default function Header(): JSX.Element {
   const location = useLocation();

@@ -2,7 +2,7 @@ import { Mail, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import GlassContainer from './GlassContainer';
 
-const SpaceEyesLogoPath = "../public/logos/space-eyes-w1.png";
+const SpaceEyesLogoPath = "/logos/space-eyes-w1.webp";
 
 export default function Footer() {
     return (

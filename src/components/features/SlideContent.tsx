@@ -9,7 +9,7 @@ interface SlideContentProps {
   index: number;
 }
 
-export const SlideContent: React.FC<SlideContentProps> = ({ data, index }) => {
+export const SlideContent: React.FC<SlideContentProps> = ({ data }) => {
   const { title, subtitle, description, points, imagePlaceholderText, imageUrl, isTextRight } = data;
 
   const textOrderClasses = isTextRight ? 'lg:order-2' : 'lg:order-1';
